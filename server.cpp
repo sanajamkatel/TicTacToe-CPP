@@ -169,8 +169,8 @@ public:
             res.body = boardToJson();
         });
 
-        std::cout << "Tic-Tac-Toe Server starting on http://localhost:8080" << std::endl;
-        server.listen("localhost", 8080);
+        std::cout << "Tic-Tac-Toe Server starting on http://0.0.0.0:8080" << std::endl;
+        server.listen("0.0.0.0", 8080);
     }
 };
 
@@ -179,3 +179,4 @@ int main() {
     gameServer.startServer();
     return 0;
 }
+
